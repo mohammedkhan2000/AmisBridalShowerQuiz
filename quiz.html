@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Well Do You Know Ami?</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* Add custom styles for printing and aesthetics */
+        body {
+            font-family: 'Inter', sans-serif; /* Use Inter font */
+            -webkit-print-color-adjust: exact; /* Ensure colors print correctly */
+            print-color-adjust: exact;
+        }
+        .title-font {
+            font-family: 'Playfair Display', serif; /* Elegant font for title */
+        }
+        /* Style for the answer lines */
+        .answer-line {
+            border-bottom: 1px solid #cbd5e1; /* Light gray border */
+            display: block;
+            margin-top: 0.3rem; /* Reduced space above the line */
+            min-height: 1.25rem; /* Reduced height for the line */
+        }
+        /* Hide print button when printing */
+        @media print {
+            .print-button {
+                display: none;
+            }
+            /* Ensure container takes full width for printing */
+            .quiz-container {
+                 max-width: 100% !important;
+                 box-shadow: none !important;
+                 border: none !important;
+                 padding-top: 1rem !important; /* Reduce padding slightly for print */
+                 padding-bottom: 1rem !important;
+            }
+             body {
+                margin: 0;
+                padding: 0;
+                background-color: #ffffff !important; /* Ensure white background for print */
+            }
+            /* Attempt to prevent breaks inside question blocks */
+            .question-block {
+                 page-break-inside: avoid;
+            }
+            /* Reduce overall font size slightly for print only */
+            body {
+                font-size: 95%;
+            }
+             h1, h2 {
+                 font-size: 110%; /* Adjust header sizes relative to new base */
+             }
+        }
+        /* Add a subtle repeating floral background for screen */
+        body {
+             background-color: #fff7f9; /* Very light pink background */
+        }
+    </style>
+</head>
+<body class="bg-pink-50 p-4 md:p-8">
+
+    <div class="quiz-container max-w-2xl mx-auto bg-white p-6 md:p-8 rounded-lg shadow-lg border border-pink-200">
+
+        <div class="text-center mb-6 border-b-2 border-pink-300 pb-4">
+             <span class="text-3xl text-pink-400">🌸</span>
+            <h1 class="title-font text-3xl md:text-4xl font-bold text-gray-800 mt-2 mb-1">How Well Do You Know</h1>
+            <h2 class="title-font text-4xl md:text-5xl font-bold text-pink-500 mb-2">The Bride-to-Be?</h2>
+             <p class="text-gray-600 italic">A little quiz all about Ami!</p>
+             <span class="text-3xl text-pink-400">💍</span>
+        </div>
+
+        <div class="space-y-4 text-gray-700">
+            <div class="question-block">
+                <label class="block font-semibold">1. How old is Ami?</label>
+                <span class="answer-line"></span>
+            </div>
+            <div class="question-block">
+                <label class="block font-semibold">2. What is Ami's first cat called?</label>
+                <span class="answer-line"></span>
+            </div>
+            <div class="question-block">
+                <label class="block font-semibold">3. How many brothers does Ami have?</label>
+                <span class="answer-line"></span>
+            </div>
+            <div class="question-block">
+                <label class="block font-semibold">4. Is Ami a gamer? (Yes/No)</label>
+                <span class="answer-line"></span>
+            </div>
+            <div class="question-block">
+                <label class="block font-semibold">5. What is Ami's favourite anime?</label>
+                <span class="answer-line"></span>
+            </div>
+            <div class="question-block">
+                <label class="block font-semibold">6. What car does Ami have?</label>
+                <span class="answer-line"></span>
+            </div>
+            <div class="question-block">
+                <label class="block font-semibold">7. What’s Ami's favourite colour?</label>
+                <span class="answer-line"></span>
+            </div>
+            <div class="question-block">
+                <label class="block font-semibold">8. What’s Ami's favourite thing to do?</label>
+                <span class="answer-line"></span>
+            </div>
+            <div class="question-block">
+                <label class="block font-semibold">9. Is Ami messy or clean?</label>
+                <span class="answer-line"></span>
+            </div>
+            <div class="question-block">
+                <label class="block font-semibold">10. Is Ami a lover or a fighter?</label>
+                <span class="answer-line"></span>
+            </div>
+             <div class="question-block">
+                <label class="block font-semibold">11. What’s her shoe size?</label>
+                <span class="answer-line"></span>
+            </div>
+             <div class="question-block">
+                <label class="block font-semibold">12. What is her favourite drink?</label>
+                <span class="answer-line"></span>
+            </div>
+             <div class="question-block">
+                <label class="block font-semibold">13. What is her pet peeve?</label>
+                <span class="answer-line"></span>
+            </div>
+             <div class="question-block">
+                <label class="block font-semibold">14. What’s Ami's best feature?</label>
+                <span class="answer-line"></span>
+            </div>
+             <div class="question-block">
+                <label class="block font-semibold">15. What’s Ami’s Hogwarts house?</label>
+                <span class="answer-line"></span>
+            </div>
+             <div class="question-block">
+                <label class="block font-semibold">16. What’s Ami’s dream vacation destination?</label>
+                <span class="answer-line"></span>
+            </div>
+             <div class="question-block">
+                <label class="block font-semibold">17. What’s one thing Ami will definitely do at the wedding?</label>
+                <span class="answer-line"></span>
+            </div>
+             <div class="question-block">
+                <label class="block font-semibold">18. Who’s the better cook: Ami or her fiancé?</label>
+                <span class="answer-line"></span>
+            </div>
+             <div class="question-block">
+                <label class="block font-semibold">19. What’s Ami’s go-to karaoke song?</label>
+                <span class="answer-line"></span>
+            </div>
+             <div class="question-block">
+                <label class="block font-semibold">20. If Ami could only eat one food forever, what would it be?</label>
+                <span class="answer-line"></span>
+            </div>
+
+
+        <div class="mt-8 pt-6 border-t-2 border-pink-300 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+            <div class="flex items-center space-x-2 flex-grow mr-4 mb-2 sm:mb-0">
+                <label for="guestName" class="font-semibold text-gray-700 whitespace-nowrap">Quiz Taker's Name:</label>
+                <input type="text" id="guestName" class="border-b-2 border-pink-300 focus:outline-none focus:border-pink-500 w-full">
+            </div>
+            <div class="flex items-center space-x-2">
+                <label for="score" class="font-semibold text-gray-700">Score:</label>
+                <span id="score" class="font-bold text-lg text-pink-600 border-b-2 border-pink-300 w-16 text-center"> / 20</span>
+            </div>
+        </div>
+
+         <div class="text-center mt-6 print-button">
+            <button onclick="window.print()" class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-6 rounded-full shadow-md transition duration-300 ease-in-out">
+                Print Quiz Sheet
+            </button>
+        </div>
+
+         <div class="text-center mt-6 text-pink-400">
+             <p>❀ Thanks for celebrating with us! ❀</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
